@@ -1,0 +1,294 @@
+*{
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+    height: 100vh;
+    color: #333;
+    background-image: linear-gradient(to top left, #753682 0%, #bf2e34 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+.msg{
+    position: fixed;
+    height:50px;
+    width: 500px;
+    /* background-color: #ffffff; */
+    top:10px;
+    color:rgb(255, 255, 255);
+    text-align: center;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    display: block;
+}
+.msg-none{
+    position: fixed;
+    height:50px;
+    width: 500px;
+    /* background-color: #ffffff; */
+    top:10px;
+    color:goldenrod;
+    text-align: center;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    display: none;
+}
+.main{
+    height: 85vh;
+    width:70vW;
+    /* background-color: #333; */
+    border-radius: 10px;
+    display: flex;
+  }
+.win-player1{
+    height: 100%;
+    width: 50%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-color: rgb(23, 23, 23);
+    h1{
+        color: #ae2e52;
+
+    }
+    
+}  
+.win-player2{
+    height: 100%;
+    width: 50%;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: rgb(23, 23, 23);
+    h1{
+        color: #ae2e52;
+
+    }
+}
+.player1{
+    height: 100%;
+    width: 50%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.642);
+  
+}
+.player11{
+    height: 100%;
+    width: 50%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.374);
+  
+}
+
+.player-1{
+    height: 100%;
+    width: 50%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-color: rgb(14, 14, 14);
+    h1{
+        color: #c7365f;
+    };
+}
+
+.player0{
+    font-size: 30px;
+        color: black;
+        font-weight: 700;
+        font-family:Arial, Helvetica, sans-serif;
+        margin-left: 200px;
+        margin-top: 60px;
+        opacity: 70%;
+}
+.score0{
+    font-size: 80px;
+    color: #c7365f;
+    font-weight: 500;
+    font-family:Arial, Helvetica, sans-serif;
+    margin-left: 250px;
+    margin-top: 60px;
+    opacity: 70%;
+}
+.player2{
+    height: 100%;
+    width: 50%;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.374);
+}
+.player22{
+    height: 100%;
+    width: 50%;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.642);
+}
+.player-2{
+    height: 100%;
+    width: 50%;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.374);
+    h1{
+        color: #c7365f;
+    }
+}
+.scorebox{
+    height:150px;
+    width:250px;
+    background-color: #c7365f;
+    border-radius: 10px;
+    margin-top: 150px;
+    margin-left: 150px;
+    line-height: 25px;
+    padding-top: 30px;
+   
+}
+.current{
+    font-size: 25px;
+    color: white;
+    font-weight: 400;
+ 
+    margin-left: 70px;
+}
+.score{
+    font-size: 45px;
+    color: white;
+    font-weight: 400;
+    margin-top: 30px;
+    margin-left: 120px;
+}
+.btn-new{
+    display: inline;
+    padding: 10px;
+    border: 1px solid transparent;
+    border-radius: 25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position: fixed;
+    font-size: 20px;
+    top: 100px;
+    right: 46%;
+    opacity: 70%;
+}
+.btn-roll{
+    display: inline;
+    padding: 10px;
+    border: 1px solid transparent;
+    border-radius: 25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position: fixed;
+    font-size: 20px;
+    bottom: 200px;
+    right: 46%;
+    opacity: 70%;
+}
+.btn-hold{
+    display: inline;
+    padding: 10px;
+    border: 1px solid transparent;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-radius: 25px;
+    position: fixed;
+    font-size: 18px;
+    bottom: 130px;
+    right: 47%;
+    opacity: 70%;
+}
+
+
+.dice{
+
+    height:150px;
+    width:150px;
+    background-color: black;
+    position: fixed;
+    top:200px;
+    right: 550px;
+    display: none;
+    transition: all 0.2s linear;
+}
+.dice1{
+   
+    background-image: url("dice1.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: fixed;
+    top:250px;
+    right: 675px;
+    height:180px;
+    width:180px;
+    border-radius: 25px;
+    transition: all 0.2s linear;
+}
+.dice2{
+   
+    background-image: url("dice2.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: fixed;
+    top:250px;
+    right: 675px;
+    height:180px;
+    width:180px;
+    border-radius: 25px;
+    transition: all 0.2s linear;
+}
+.dice3{
+  
+    background-image: url("dice3.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: fixed;
+    top:250px;
+    right: 675px;
+    height:180px;
+    width:180px;
+    border-radius: 25px;
+    transition: all 0.2s linear;
+}
+.dice4{
+ 
+    background-image: url("dice4.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: fixed;
+    top:250px;
+    right: 675px;
+    height:180px;
+    width:180px;
+    border-radius: 25px;
+    transition: all 0.2s linear;
+}
+.dice5{
+    
+    background-image: url("dice5.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: fixed;
+    top:250px;
+    right: 675px;
+    height:180px;
+    width:180px;
+    border-radius: 25px;
+    transition: all 0.2s linear;
+}
+.dice6{
+    
+    background-image: url("dice6.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: fixed;
+    top:250px;
+    right: 675px;
+    height:180px;
+    width:180px;
+    border-radius: 25px;
+    transition: all 0.2s linear;
+}
